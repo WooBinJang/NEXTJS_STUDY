@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@layer base {
+  #__next {
+    display: contents;
+  }
+  // next 자제에서 만들어준 DOM 컨트롤하기 힘들기 때문에  display: contents; 처리
+  // display: contents = 박스 요소 생성 X , 접근성 트리 접근 제외
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

@@ -9,13 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "copy-to-clipboard": "^3.3.3",
     "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^4.11.0",
-    "scss": "^0.2.4"
+    "scss": "^0.2.4",
+    "swr": "^2.2.4"
   },
   "devDependencies": {
+    "@types/navermaps": "^3.7.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
