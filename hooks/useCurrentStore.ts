@@ -9,8 +9,6 @@ const useCurrentStore = () => {
   }, []);
 
   const clearCurrentStore = useCallback(() => {
-    console.log('!@3');
-
     mutate(CURRENT_STORE_KEY, null);
   }, []);
 

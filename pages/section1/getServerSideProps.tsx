@@ -4,8 +4,6 @@ interface Props {
   data: number;
 }
 const Example: NextPage<Props> = ({ data }) => {
-  console.log(data);
-
   return (
     <>
       <h1>getServerSideProps</h1>
@@ -24,8 +22,6 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
   const data = await new Promise((resolve) =>
     setTimeout(() => resolve(Math.random()), delayInSeconds * 1000)
   );
-
-  console.log(data);
 
   return {
     props: { data },
