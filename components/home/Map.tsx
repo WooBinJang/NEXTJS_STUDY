@@ -2,6 +2,7 @@ import { INITIAL_CENTER, INITIAL_ZOOM } from '@/hooks/useMap';
 import { NaverMap } from '@/types/map';
 import { Coordinates } from '@/types/store';
 import Script from 'next/script';
+import styles from '../../styles/map.module.scss';
 
 import React, { useEffect, useRef } from 'react';
 
@@ -60,7 +61,7 @@ const Map = ({
         onReady={initializeMap}
         // script가 마운트 될 때마다 실행
       />
-      <div id={mapId} style={{ width: '100%', height: '100%' }} />
+      <div id={mapId} className={styles.map} />
     </>
   );
 };

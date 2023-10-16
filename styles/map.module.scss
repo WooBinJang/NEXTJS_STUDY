@@ -1,0 +1,12 @@
+@use './detail.module';
+
+.map {
+  width: 100%;
+  height: 100%;
+
+  // naver logo 위치 수정
+  & > div:nth-of-type(2) {
+    bottom: detail.$header-height + detail.$section-padding-top !important;
+  }
+  //naver logo의 css가 inline style로 지정되어 있어서 우선순위 때문에 important 처리
+}
