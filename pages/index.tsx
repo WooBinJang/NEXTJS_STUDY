@@ -2,7 +2,7 @@ import { Fragment, useEffect } from 'react';
 import MapSection from '@/components/home/MapSection';
 import { Store } from '@/types/store';
 import useStores from '@/hooks/useStores';
-import Header from '@/components/home/header';
+import Header from '../components/common/Header';
 import DetailSection from '@/components/home/DetailSection';
 
 interface Props {
