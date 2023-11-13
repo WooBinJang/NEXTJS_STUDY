@@ -18,6 +18,7 @@ const DetailHeader = ({ currentStore, expanded, onClickArrow }: Props) => {
         onClick={onClickArrow}
         className={`${styles.arrowButton} ${expanded ? styles.expanded : ''}`}
         disabled={!currentStore}
+        aria-label={expanded ? '매장 정보 닫기' : '매장 정보 펼치기'}
       >
         <IoIosArrowUp size={20} color="#666" />
       </button>
@@ -30,6 +31,7 @@ const DetailHeader = ({ currentStore, expanded, onClickArrow }: Props) => {
             onClick={() => {
               copy(location.origin + '/' + currentStore.name);
             }}
+            aria-label="매장 페이지 주소 클립보드 복사"
           >
             <AiOutlineShareAlt size={20} />
           </button>
